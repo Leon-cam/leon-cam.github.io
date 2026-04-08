@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iUSBDebugger Support</title>
+  <style>
+    :root {
+      --bg: #fbf9f5;
+      --card: #ffffff;
+      --ink: #181616;
+      --muted: #605953;
+      --line: rgba(24, 22, 22, 0.1);
+      --accent: #145da0;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #f7f1ea 0%, var(--bg) 100%);
+      color: var(--ink);
+    }
+
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 28px 20px 56px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 16px 40px rgba(24, 22, 22, 0.08);
+    }
+
+    h1, h2 {
+      letter-spacing: -0.03em;
+    }
+
+    p, li {
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 22px;
+    }
+
+    .top a {
+      font-weight: 700;
+    }
+
+    .section {
+      margin-top: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <strong>iUSBDebugger Support</strong>
+      <a href="../">Back to Product Page</a>
+    </div>
+
+    <div class="card">
+      <h1 style="margin-top:0;">Support</h1>
+      <p>
+        iUSBDebugger is a macOS utility for inspecting USB, USB-C, USB Power Delivery,
+        Apple mobile device connectivity, and Thunderbolt / USB4 topology.
+      </p>
+
+      <div class="section">
+        <h2>Supported Platform</h2>
+        <p>macOS 14.0 or later.</p>
+      </div>
+
+      <div class="section">
+        <h2>Common Issues</h2>
+        <ul>
+          <li>If a device does not appear, disconnect and reconnect it, then refresh the app.</li>
+          <li>If a hub or adapter is in the path, test with a direct connection to isolate the issue.</li>
+          <li>Thunderbolt and USB4 topology may appear incomplete until negotiation fully settles.</li>
+          <li>Apple mobile device connector type is intentionally conservative when the operating system does not provide reliable proof.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Support Contact</h2>
+        <p>
+          For support questions, contact:
+          <br>
+          <a href="mailto:leon.cam.uk@gmail.com">leon.cam.uk@gmail.com</a>
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Response Time</h2>
+        <p>We aim to respond to support requests within 3 business days.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
