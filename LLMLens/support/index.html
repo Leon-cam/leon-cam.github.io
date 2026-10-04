@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLM Lens Support</title>
+  <style>
+    :root{--bg:#f3f1fb;--card:rgba(255,255,255,.82);--ink:#17142b;--muted:#5d5873;--line:rgba(23,20,43,.12);--accent:#5b3fd6;--accent-2:#a347d9;--shadow:0 18px 48px rgba(23,20,43,.12)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:"Avenir Next","Segoe UI",sans-serif;color:var(--ink);background:radial-gradient(circle at top left,rgba(91,63,214,.18),transparent 30%),radial-gradient(circle at bottom right,rgba(163,71,217,.16),transparent 32%),linear-gradient(180deg,#f7f5fd 0%,var(--bg) 100%)}
+    a{color:inherit;text-decoration:none}
+    p,li{color:var(--muted);line-height:1.7}
+
+    .wrap{max-width:860px;margin:0 auto;padding:28px 20px 56px}
+    .top{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:22px}
+    .top a,.card a{color:var(--accent);font-weight:700}
+    .card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 16px 40px rgba(23,20,43,.08)}
+    h1,h2{letter-spacing:-.03em}.section{margin-top:24px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <strong>LLM Lens Support</strong>
+      <a href="../">Back to Product Page</a>
+    </div>
+    <div class="card">
+      <h1 style="margin-top:0;">Support</h1>
+      <p>Email <a href="mailto:leon.cam.uk@gmail.com">leon.cam.uk@gmail.com</a>. We usually reply within two business days.</p>
+      <div class="section">
+        <h2>Requirements</h2>
+        <p>A Mac with Apple silicon (M1 or later) running macOS 14 or later. Models download separately (from about 350 MB). 8 GB of memory runs models up to about 4B parameters; fine-tuning larger models needs 16 GB.</p>
+      </div>
+      <div class="section">
+        <h2>Getting Started</h2>
+        <ul><li>Open <strong>Models</strong> and download <strong>Qwen3-0.6B</strong> (free).</li><li>Go to <strong>Anatomy</strong> and press <strong>Run on Mac</strong> (⌘↩). Click through each stage.</li><li>Open <strong>Sampling Lab</strong> and move the sliders to see how the next token is chosen.</li></ul>
+      </div>
+      <div class="section">
+        <h2>Common Questions</h2>
+        <p><strong>A model download is slow or failed.</strong> Models come from Hugging Face. Check your connection and choose Retry in Models.</p>
+        <p><strong>A model says it needs more memory than this Mac has.</strong> Each model card compares its needs with your Mac's GPU memory budget. Pick a smaller model, or close other apps for models marked "tight".</p>
+        <p><strong>Why can't I X-ray or fine-tune some models?</strong> X-ray needs standard attention layers to inspect; hybrid models (LFM2, Qwen3.5) and Gemma 4 use different layers. Qwen3.5's linear-attention layers can't be trained by MLX yet. Each model card explains why.</p>
+        <p><strong>Restore purchases.</strong> Open the paywall and choose Restore, or use LLM Lens ▸ Restore Purchases.</p>
+        <p><strong>Cancel a subscription.</strong> System Settings ▸ your name ▸ Media &amp; Purchases ▸ Subscriptions, or App Store ▸ your account ▸ Subscriptions.</p>
+        <p><strong>Where are my fine-tuned adapters?</strong> Fine-tune ▸ Export adapter… or Export fused model… copies them to a folder you choose. Both work with mlx-lm and mlx-swift-lm.</p>
+      </div>
+      <div class="section">
+        <h2>Privacy</h2>
+        <p>Nothing you type or train leaves your Mac. See the <a href="../privacy/">privacy policy</a>.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
